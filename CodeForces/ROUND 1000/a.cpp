@@ -1,0 +1,27 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define endl '\n'
+const ll mod=1e9+7;
+
+void solve(){
+    ll l, r;
+    cin>>l>>r;
+    ll nums=r-l+1;
+    if(nums==1 && l==1){
+        cout<<1<<endl;
+        return;
+    }
+    cout<<nums-1<<endl;
+}
+
+int main(){
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    int t=1;
+    cin>>t;
+    while(t--){
+        solve();
+    }
+    return 0;
+}
